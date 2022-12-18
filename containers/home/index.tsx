@@ -3,6 +3,7 @@ import Achievement from './honor-and-awards';
 import HomeBanner from './banner';
 import Projects from './projects';
 import Languages from './languages';
+import Contact from './contact';
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Achievement />
 
       <Languages />
+
+      <Contact />
     </>
   );
 }

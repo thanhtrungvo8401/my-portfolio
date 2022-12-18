@@ -7,7 +7,8 @@ const links = [
   { text: 'Home', url: `#${ANCHOR.HOME}` },
   { text: 'Projects', url: `#${ANCHOR.PROJECTS}` },
   { text: 'Honors & awards', url: `#${ANCHOR.HONORS_AWARDS}` },
-  { text: 'Languages', url: `#${ANCHOR.LANGUAGES}` }
+  { text: 'Languages', url: `#${ANCHOR.LANGUAGES}` },
+  { text: 'Contact', url: `#${ANCHOR.CONTACT}` }
 ];
 
 export default function Navigation() {
