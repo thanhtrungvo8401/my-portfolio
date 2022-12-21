@@ -11,6 +11,19 @@ const links = [
   { text: 'Contact', url: `#${ANCHOR.CONTACT}` }
 ];
 
+function downloadCV() {
+  const element = document.createElement('a');
+  element.setAttribute('href', 'my-cv.pdf');
+  element.setAttribute('download', 'trung.vothanh.pdf');
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
 export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 z-50 items-center w-full shadow-xl bg-gray-50">
@@ -38,7 +51,7 @@ export default function Navigation() {
             );
           })}
 
-          <Button className="mx-4">
+          <Button className="mx-4" onClick={downloadCV}>
             <svg
               className="w-4 h-4 mr-2 fill-current"
               xmlns="http://www.w3.org/2000/svg"
