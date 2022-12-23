@@ -1,4 +1,3 @@
-import { Back } from 'gsap';
 import React from 'react';
 import Container from '../../../components/atoms/container';
 import Headline5 from '../../../components/atoms/headline-5';
