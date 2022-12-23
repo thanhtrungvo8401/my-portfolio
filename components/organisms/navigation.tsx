@@ -13,8 +13,8 @@ const links = [
 
 function downloadCV() {
   const element = document.createElement('a');
-  element.setAttribute('href', 'my-cv.pdf');
-  element.setAttribute('download', 'trung.vothanh.pdf');
+  element.setAttribute('href', 'trung.vo.pdf');
+  element.setAttribute('download', 'trung.vo.pdf');
 
   element.style.display = 'none';
   document.body.appendChild(element);

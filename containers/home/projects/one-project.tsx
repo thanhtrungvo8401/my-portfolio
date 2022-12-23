@@ -101,16 +101,15 @@ export function OneProject(props: Project) {
             <div className="IMAGES_SCROLL">
               {images.map((el, index) => {
                 return (
-                  <>
+                  <div key={el.url + '-' + index}>
                     <Headline5 className="text-center">{el.alt}</Headline5>
 
                     <MyImage
-                      key={el.url + '-' + index}
                       src={el.url}
                       className="w-full h-auto mb-4"
                       alt={el.alt}
                     />
-                  </>
+                  </div>
                 );
               })}
             </div>
