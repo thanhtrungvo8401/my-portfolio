@@ -1,6 +1,7 @@
 import { Back } from 'gsap';
 import React from 'react';
 import Container from '../../../components/atoms/container';
+import Headline5 from '../../../components/atoms/headline-5';
 import MyImage from '../../../components/atoms/image';
 import { gsap } from '../../../components/libs/gsap';
 import { useIsMobile } from '../../../hooks/isMobile.hook';
@@ -11,6 +12,8 @@ type Project = {
   isReversed?: boolean;
   scrollTriggerConfig?: Record<string, any>;
   effects?: Array<Record<string, any>>;
+  imageScrollDuration: number;
+  imageScrollLocation: number;
 };
 
 const IMAGES_BLOCK = 'images-block';
@@ -22,7 +25,9 @@ export function OneProject(props: Project) {
     images = [],
     isReversed = false,
     scrollTriggerConfig = {},
-    effects = []
+    effects = [],
+    imageScrollDuration,
+    imageScrollLocation
   } = props;
   const projectRef: React.MutableRefObject<any> = React.useRef();
 
@@ -53,12 +58,11 @@ export function OneProject(props: Project) {
 
         tl2
           .from('.IMAGES_SCROLL', {
-            yPercent: 0
+            y: 0
           })
           .to('.IMAGES_SCROLL', {
-            yPercent: -40,
-            ease: Back.easeInOut,
-            duration: 5
+            y: imageScrollLocation,
+            duration: imageScrollDuration
           });
       }, projectRef);
 
@@ -93,17 +97,21 @@ export function OneProject(props: Project) {
           style={{ paddingTop: '40%' }}
         >
           <div
-            className={`absolute top-0 w-full h-full overflow-y-scroll hide-scroll-bar `}
+            className={`absolute top-0 w-full h-full overflow-y-scroll hide-scroll-bar rounded-2xl overflow-hidden`}
           >
             <div className="IMAGES_SCROLL">
               {images.map((el, index) => {
                 return (
-                  <MyImage
-                    key={el.url + '-' + index}
-                    src={el.url}
-                    className="w-full h-auto"
-                    alt={el.alt}
-                  />
+                  <>
+                    <Headline5 className="text-center">{el.alt}</Headline5>
+
+                    <MyImage
+                      key={el.url + '-' + index}
+                      src={el.url}
+                      className="w-full h-auto mb-4"
+                      alt={el.alt}
+                    />
+                  </>
                 );
               })}
             </div>
