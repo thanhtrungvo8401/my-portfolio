@@ -32,7 +32,7 @@ export default function Navigation() {
           href={'#'}
           className="hidden overflow-hidden rounded-full w-14 h-14 md:inline-block"
           style={{
-            backgroundImage: 'url("/images/me-2.jpg")',
+            backgroundImage: 'url("images/trung.vo.png")',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
