@@ -8,7 +8,8 @@ const links = [
   { text: 'Projects', url: `#${ANCHOR.PROJECTS}` },
   { text: 'Honors & awards', url: `#${ANCHOR.HONORS_AWARDS}` },
   { text: 'Languages', url: `#${ANCHOR.LANGUAGES}` },
-  { text: 'Contact', url: `#${ANCHOR.CONTACT}` }
+  { text: 'Contact', url: `#${ANCHOR.CONTACT}` },
+  { text: 'Good reads', url: '/good-reads' }
 ];
 
 function downloadCV() {
