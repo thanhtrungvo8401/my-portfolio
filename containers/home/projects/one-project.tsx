@@ -104,11 +104,7 @@ export function OneProject(props: Project) {
                   <div key={el.url + '-' + index}>
                     <Headline5 className="text-center">{el.alt}</Headline5>
 
-                    <MyImage
-                      src={el.url}
-                      className="w-full h-auto mb-4"
-                      alt={el.alt}
-                    />
+                    <MyImage src={el.url} className="mb-4 h-96" alt={el.alt} />
                   </div>
                 );
               })}

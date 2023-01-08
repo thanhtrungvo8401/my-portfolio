@@ -4,6 +4,13 @@ const nextConfig = {
   swcMinify: true,
   eslint: {
     dirs: ['./'] // before build, eslint will check all eslint value!
+  },
+  images: {
+    remotePatterns: [
+      {
+        hostname: '*'
+      }
+    ]
   }
 };
 

@@ -1,12 +1,10 @@
+import Image from 'next/image';
+
 export default function MyImage(props: any = {}) {
-  const { className = '', src = '', alt = '' } = props;
+  const { className = '', src = '', alt = '', ...imageProps } = props;
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      {...props}
-      src={src}
-      alt={alt}
-      className={`w-full h-auto ${className}`}
-    />
+    <span className={`w-full h-full relative block ${className}`}>
+      <Image {...imageProps} src={src} alt={alt} fill={true} />
+    </span>
   );
 }

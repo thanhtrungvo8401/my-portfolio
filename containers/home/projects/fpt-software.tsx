@@ -19,7 +19,7 @@ const images = [
     alt: 'MIPART - Company I worked for'
   },
   {
-    url: 'images/mipart.png',
+    url: '/images/mipart.png',
     alt: 'MIPART - Company I worked for'
   },
   {
@@ -33,8 +33,8 @@ export default function FptSoftware() {
     <OneProject
       images={images}
       isReversed
-      imageScrollDuration={8}
-      imageScrollLocation={-1600}
+      imageScrollDuration={10}
+      imageScrollLocation={-2000}
     >
       <Headline3 className="mb-6">
         FPT Software

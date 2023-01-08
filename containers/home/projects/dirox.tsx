@@ -35,7 +35,7 @@ export default function Dirox() {
       }}
       effects={[]}
       imageScrollDuration={10}
-      imageScrollLocation={-1800}
+      imageScrollLocation={-1600}
     >
       <Headline3 className="mb-6">
         Dirox

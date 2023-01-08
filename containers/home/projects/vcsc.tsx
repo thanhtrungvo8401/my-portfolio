@@ -32,9 +32,9 @@ const images = [
 export default function VCSC() {
   return (
     <OneProject
-      images={[...images, ...images, ...images]}
-      imageScrollDuration={12}
-      imageScrollLocation={-2400}
+      images={[...images]}
+      imageScrollDuration={10}
+      imageScrollLocation={-2000}
       scrollTriggerConfig={{
         start: 'top top+=80%',
         end: 'bottom bottom-=80%',
