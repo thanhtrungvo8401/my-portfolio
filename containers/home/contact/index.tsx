@@ -1,6 +1,5 @@
 import Container from '../../../components/atoms/container';
 import Headline2 from '../../../components/atoms/headline-2';
-import Headline5 from '../../../components/atoms/headline-5';
 import MyImage from '../../../components/atoms/image';
 import Text from '../../../components/atoms/text';
 import { ANCHOR } from '../../../utils/constant';

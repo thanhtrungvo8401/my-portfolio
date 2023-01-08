@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ANCHOR } from '../../utils/constant';
 import Button from '../atoms/button';
 import Container from '../atoms/container';
+import MyImage from '../atoms/image';
 
 const links = [
   { text: 'Home', url: `#${ANCHOR.HOME}` },
@@ -37,7 +38,9 @@ export default function Navigation() {
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
-        ></Link>
+        >
+          <MyImage src={'/images/trung.vo.png'} alt="avatar" />
+        </Link>
 
         <div className="flex flex-wrap items-center justify-between md:block">
           {links.map((el) => {

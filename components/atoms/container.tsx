@@ -7,9 +7,10 @@ export default function Container(props: {
   background?: {
     className?: string;
     style?: Record<string, any>;
+    children?: React.ReactNode;
   };
 }) {
-  const { className = '', style = {}, background = {} } = props;
+  const { className = '', style = {}, background } = props;
 
   if (!props.background) {
     return (
@@ -29,10 +30,12 @@ export default function Container(props: {
     >
       <div
         className={`absolute w-screen h-full ${
-          background.className || ''
+          background?.className || ''
         } z-0 top-0 left-1/2 -translate-x-1/2`}
-        style={background.style || {}}
-      ></div>
+        style={background?.style || {}}
+      >
+        {background?.children}
+      </div>
 
       <div className="relative z-10">{props.children}</div>
     </div>

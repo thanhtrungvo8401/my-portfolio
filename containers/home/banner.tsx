@@ -1,9 +1,9 @@
 import React from 'react';
 import BoldText from '../../components/atoms/bold-text';
 import Container from '../../components/atoms/container';
-import Headline1 from '../../components/atoms/headline-1';
 import Headline2 from '../../components/atoms/headline-2';
 import Headline3 from '../../components/atoms/headline-3';
+import MyImage from '../../components/atoms/image';
 import Quote from '../../components/atoms/quote';
 import Text from '../../components/atoms/text';
 import { ANCHOR } from '../../utils/constant';
@@ -14,12 +14,17 @@ export default function HomeBanner() {
   return (
     <Container
       background={{
-        className: '!t-20',
-        style: {
-          backgroundImage: 'url(/images/saigon-line.jpg)',
-          backgroundSize: 'contain',
-          backgroundPosition: 'center'
-        }
+        children: (
+          <div className="absolute z-0 w-full h-full">
+            <MyImage
+              src={'/images/saigon-line.jpg'}
+              alt="Banner"
+              // style={{
+              //   objectFit: 'fill'
+              // }}
+            />
+          </div>
+        )
       }}
     >
       <span id={ANCHOR.HOME} className="relative -top-20"></span>
