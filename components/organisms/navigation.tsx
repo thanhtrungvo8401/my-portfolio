@@ -5,11 +5,11 @@ import Container from '../atoms/container';
 import MyImage from '../atoms/image';
 
 const links = [
-  { text: 'Home', url: `#${ANCHOR.HOME}` },
-  { text: 'Projects', url: `#${ANCHOR.PROJECTS}` },
-  { text: 'Honors & awards', url: `#${ANCHOR.HONORS_AWARDS}` },
-  { text: 'Languages', url: `#${ANCHOR.LANGUAGES}` },
-  { text: 'Contact', url: `#${ANCHOR.CONTACT}` },
+  { text: 'Home', url: `/#${ANCHOR.HOME}` },
+  { text: 'Projects', url: `/#${ANCHOR.PROJECTS}` },
+  { text: 'Honors & awards', url: `/#${ANCHOR.HONORS_AWARDS}` },
+  { text: 'Languages', url: `/#${ANCHOR.LANGUAGES}` },
+  { text: 'Contact', url: `/#${ANCHOR.CONTACT}` },
   { text: 'Good reads', url: '/good-reads' }
 ];
 
@@ -31,7 +31,7 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 z-50 items-center w-full shadow-xl bg-gray-50">
       <Container className="flex items-center justify-between h-20">
         <Link
-          href={'#'}
+          href={'/#'}
           className="hidden overflow-hidden rounded-full w-14 h-14 md:inline-block"
           style={{
             backgroundImage: 'url("/images/trung.vo.png")',
