@@ -6,14 +6,14 @@ import Footer from '../components/organisms/footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="flex flex-col h-full">
       <Navigation />
 
-      <main className="pt-20">
+      <main className="h-full pt-20">
         <Component {...pageProps} />
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
