@@ -6,10 +6,10 @@ import Footer from '../components/organisms/footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col justify-between min-h-full">
       <Navigation />
 
-      <main className="h-full pt-20">
+      <main className="pt-20">
         <Component {...pageProps} />
       </main>
 

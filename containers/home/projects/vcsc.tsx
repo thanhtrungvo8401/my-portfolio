@@ -77,6 +77,15 @@ export default function VCSC() {
         Users are also able to check their order status, histories and assets
         easily thanks to this application.
       </Text>
+
+      <br />
+
+      <Text>
+        Accessable links:{' '}
+        <ExternalLink href="https://bond.vcsc.com.vn/">
+          BOND CLIENT
+        </ExternalLink>
+      </Text>
       <br />
 
       <Text>

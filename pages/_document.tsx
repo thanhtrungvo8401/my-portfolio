@@ -16,7 +16,7 @@ export default function Document() {
         <meta name="description" content="Trung.Vo Portfolio" />
         <meta name="keywords" content="Developer, Fullstack, NodeJs, ReactJs" />
         <meta name="author" content="Trung.VO" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
       </Head>
       <body>
         <Main />
