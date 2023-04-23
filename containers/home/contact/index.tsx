@@ -11,26 +11,35 @@ export default function Contact() {
 
       <Headline2 className="uppercase">Contact</Headline2>
 
-      <Text>
-        <MyImage src="/images/phone.png" className="inline-block w-6 mr-4" />
+      <Text className="flex items-center">
+        <MyImage
+          src="/images/phone.png"
+          className="inline-block w-6 h-6 mr-4"
+        />
         +84 336660540
       </Text>
       <br />
 
-      <Text>
-        <MyImage src="/images/mail.png" className="inline-block w-6 mr-4" />
+      <Text className="flex items-center">
+        <MyImage src="/images/mail.png" className="inline-block w-6 h-6 mr-4" />
         thanhtrungvo8401@gmail.com
       </Text>
       <br />
 
-      <Text>
-        <MyImage src="/images/linkedIn.png" className="inline-block w-6 mr-4" />
+      <Text className="flex items-center">
+        <MyImage
+          src="/images/linkedIn.png"
+          className="inline-block w-6 h-6 mr-4"
+        />
         https://www.linkedin.com/in/vo-thanh-trung
       </Text>
       <br />
 
-      <Text>
-        <MyImage src="/images/github.png" className="inline-block w-6 mr-4" />
+      <Text className="flex items-center">
+        <MyImage
+          src="/images/github.png"
+          className="inline-block w-6 h-6 mr-4"
+        />
         https://github.com/thanhtrungvo8401
       </Text>
       <br />
