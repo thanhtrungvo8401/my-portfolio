@@ -13,10 +13,12 @@ const links = [
   { text: 'Good reads', url: '/good-reads' }
 ];
 
+const cv = 'trung.vo.pdf';
+
 function downloadCV() {
   const element = document.createElement('a');
-  element.setAttribute('href', 'trung.vo.pdf');
-  element.setAttribute('download', 'trung.vo.pdf');
+  element.setAttribute('href', cv);
+  element.setAttribute('download', cv);
 
   element.style.display = 'none';
   document.body.appendChild(element);

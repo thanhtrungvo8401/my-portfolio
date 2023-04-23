@@ -39,8 +39,8 @@ export default function HomeBanner() {
 
           <Headline3>Summary</Headline3>
           <Quote className="px-4 md:px-8">
-            A full-stack developer, with more than 3 years of experience in
-            software development, focusing on Javascript: NodeJs, ReactJs,...
+            A full-stack developer, with 4 years of experiences in software
+            development, focusing on Javascript: NodeJs, ReactJs,...
           </Quote>
 
           <Headline3 className="mt-2">Technology</Headline3>
